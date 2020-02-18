@@ -1,10 +1,11 @@
-# elicocorp/odoo
+# simplifysolutions/odoo
 Simple yet powerful [Odoo][odoo] image for [Docker][dk] maintained by
-[Elico Corporation][ec].
+[Simplify Solutions][ss] originally built by [Elico Corp][ec].
 
   [odoo]: https://www.odoo.com/
   [dk]: https://www.docker.com/
   [ec]: https://www.elico-corp.com/
+  [ss]: https://www.simplifcloud.com/
 
 <a name="toc"></a>
 ## Table of Contents
