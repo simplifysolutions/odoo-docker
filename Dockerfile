@@ -94,7 +94,7 @@ RUN from=$( awk '/^## Usage/{ print NR; exit }' /usr/share/man/man.txt ) && \
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64.deb /opt/sources/dumb-init.deb
 RUN dpkg -i /opt/sources/dumb-init.deb
 ADD bin/boot /usr/bin/boot
-ADD bin/boot /usr/bin/boot
+ADD entrypoint.sh /sbin/entrypoint.sh
 ENTRYPOINT [ "/usr/bin/dumb-init", "/sbin/entrypoint.sh" ]
 CMD [ "help" ]
 
