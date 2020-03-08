@@ -47,7 +47,7 @@ ADD auto_addons /opt/odoo/auto_addons
 User 0
 
 # Install LESS
-RUN npm install -g less less-plugin-clean-css \
+RUN apt install -yq npm && npm install -g less less-plugin-clean-css \
   && ln -s /usr/bin/nodejs /usr/bin/node
 
 # Install Odoo python dependencies
