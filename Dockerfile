@@ -12,8 +12,8 @@ RUN ln -sf /usr/share/zoneinfo/Etc/UTC /etc/localtime
 # Generate locales
 RUN apt update \
   && apt -yq install locales \
-  && locale-gen en_US.UTF-8 \
-  && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+  && locale-gen en_CA.UTF-8 \
+  && update-locale LC_ALL=en_CA.UTF-8 LANG=en_CA.UTF-8
 
 # Install APT dependencies
 ADD sources/apt.txt /opt/sources/apt.txt
